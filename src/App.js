@@ -1,16 +1,11 @@
 import React from "react";
-//compponents 
+// components
 import Home from "../src/Components/Core/Home/Home/Home"
 import Login from "../src/Components/Core/Login/Login"
 import Navbar from '../src/Components/Global/Navbar/Navbar'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
