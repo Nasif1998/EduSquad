@@ -1,14 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//compponents 
+import Home from "../src/Components/Core/Home/Home/Home"
+import Login from "../src/Components/Core/Login/Login"
+import Navbar from '../src/Components/Global/Navbar/Navbar'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Testing man</h1>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route exact path="/login">
+          <Login />
+        </Route>
+
+      </Switch>
+    </Router>
   );
 }
 
