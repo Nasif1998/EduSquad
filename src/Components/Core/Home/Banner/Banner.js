@@ -1,31 +1,25 @@
 import React from 'react';
-import banner from '../../../../image/banner.jpg'
-import banner1 from '../../../../image/banner1.jpg'
+import {Link} from 'react-router-dom';
 import './Banner.css';
 
 const Banner = () => {
     return (
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src={banner1} class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src={banner} class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src={banner} class="d-block w-100" alt="..." />
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        <section className="hero d-flex flex-column justify-content-center">
+			<div className="container">
+				<div className="row">
+					<div className="col-md-6">
+						<h1>New World For Education!</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+							fugit obcaecati ea officiis optio porro quaerat? Numquam esse,
+							nobis alias dolor vero architecto veniam ab doloremque illo quas.
+							Magnam, atque?
+						</p>
+						<Link to="/login" href="index.html" className="btn1">All Courses</Link>
+					</div>
+				</div>
+			</div>
+		</section>
     );
 };
 
