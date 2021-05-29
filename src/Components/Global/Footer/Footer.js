@@ -16,7 +16,7 @@ const Footer = () => {
     const ourAddress = [
         {name: "Barcelona - 101010 Spain" , link: "//google.com/map"},
         {name: "Camp Nou" , link: "//google.com/map"},
-       
+    
     ]
     const customerService = [
         {name: "Careers" , link: "/careers"},
