@@ -10,10 +10,7 @@ const Banner = () => {
 					<div className="col-md-6">
 						<h1>New World For Education!</h1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-							fugit obcaecati ea officiis optio porro quaerat? Numquam esse,
-							nobis alias dolor vero architecto veniam ab doloremque illo quas.
-							Magnam, atque?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident reiciendis omnis, mollitia nisi suscipit dolorum praesentium nam magni similique ducimus.
 						</p>
 						<Link to="/login" href="index.html" className="btn1">All Courses</Link>
 					</div>
