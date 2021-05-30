@@ -8,10 +8,7 @@ const Home = () => {
     return (
         <>
             <Banner />
-<<<<<<< HEAD
-=======
             <Courses />
->>>>>>> 3b231fa2aa13e24f502dc0ce730656b4ec252ef9
             <Contact></Contact>
             <Footer></Footer>
         </>
