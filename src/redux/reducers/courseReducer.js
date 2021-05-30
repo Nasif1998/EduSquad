@@ -1,26 +1,16 @@
-import allBooks from '../../fakeData/books.json';
+import courseList from '../../Data/CourseData.json';
 
 const initialState = {
-    readingList: [],
-    discoverList: allBooks,
-    finishedList: [],
+    courses: courseList,
+    purchasedList: []
 };
 
-const bookReducer = (state = initialState, action) => {
+const courseReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'ADD_TO_READING_LIST': {
+        case 'ADD_TO_PURCHASED_LIST': {
             const newState = {
                 ...state,
-                readingList: [...state.readingList, action.payload],
-            };
-            return newState;
-        }
-        case 'REMOVE_FROM_READING_LIST': {
-            const newState = {
-                ...state,
-                readingList: state.readingList.filter(
-                    (b) => b.id !== action.payload
-                ),
+                purchasedList: [...state.purchasedList, action.payload],
             };
             return newState;
         }
@@ -30,4 +20,4 @@ const bookReducer = (state = initialState, action) => {
     }
 };
 
-export default bookReducer;
+export default courseReducer;

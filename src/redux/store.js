@@ -1,10 +1,9 @@
 import { createStore, combineReducers } from "redux";
-import bookReducer from "./reducers/bookReducer";
+import courseReducer from "./reducers/courseReducer";
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 const combinedReducer = combineReducers({
-    books: bookReducer,
-    // user: userReducer,
+    courses: courseReducer,
 })
 
 export const store = createStore(combinedReducer, composeWithDevTools())

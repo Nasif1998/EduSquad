@@ -1,13 +1,6 @@
-export const addToReadingList = (payload) => {
+export const addToPurchasedList = (payload) => {
     return {
-        type: 'ADD_TO_READING_LIST',
+        type: 'ADD_TO_PURCHASED_LIST',
         payload
     }    
-}
-
-export const removeFromReadingList = (payload) => {
-    return {
-        type: 'REMOVE_FROM_READING_LIST',
-        payload
-    }
 }
