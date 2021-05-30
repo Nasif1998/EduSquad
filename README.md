@@ -1,3 +1,5 @@
-# Getting Started with Create React App
-# test commit
-# I changed my mind
+# Edu Squad
+### An Exceptional Online Educational Institution.
+
+Formed for the purpose of imparting quality education to all classes of people. A bunch of young talented people will always be with you.
+
