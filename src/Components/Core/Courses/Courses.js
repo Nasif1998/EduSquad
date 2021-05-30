@@ -8,11 +8,10 @@ const Courses = () => {
     });
     console.log(courses);
     return (
-        <div>
-            <h1>Courses {courses.length}</h1>
+        <div className="container my-5">
+            <h1 className="my-3">All Courses</h1>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
-
                 {
                     courses.map((course) => (
                         <div className="col">
